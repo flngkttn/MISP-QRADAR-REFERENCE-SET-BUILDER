@@ -8,7 +8,7 @@ requests.packages.urllib3.disable_warnings()
 
 url_pull = 'https://<misp_fqdn>/attributes/restSearch/json'
 headers_pull = {'Authorization': '<misp_token>', 'Content-Type': 'application/json', 'Accept': 'application/json'}
-data_pull = {"request": {"type": "ip-src", "category": "Network activity", "last": "1d", "enforceWarnlinglist": "True"}}
+data_pull = {"request": {"type": "ip-src", "category": "Network activity", "last_seen": "1d", "enforceWarnlinglist": "True"}}
 url_push = 'https://<qradar_fqdn>/api/reference_data/sets/bulk_load/<reference_set_name>'
 headers_push = {'SEC': '<token>', 'Content-Type': 'application/json', 'Version': '9.0', 'Accept': 'application/json'}
 
